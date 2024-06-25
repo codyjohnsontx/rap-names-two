@@ -1,7 +1,10 @@
 const { request } = require("express");
 const express = require("express");
+const cros = require("cors");
 const app = express();
 const PORT = 5500;
+
+app.use(cors());
 
 const rappers = {
   "21 savage": {
